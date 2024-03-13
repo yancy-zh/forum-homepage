@@ -6,7 +6,7 @@ function findUserById(id, users) {
 }
 function PostersAvatars({ lsUsers, lsPosters }) {
   return (
-    <Flex gap="middle" horizontal="true">
+    <Flex gap="small" horizontal="true">
       {lsPosters.map((e, i) => (
         <Poster i={i} user={findUserById(e.user_id, lsUsers)}></Poster>
       ))}

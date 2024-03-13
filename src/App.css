@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+.header-container {
+  background-color: black;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: large;
+  color: aliceblue;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+}
+.row {
+  background-color: #f0f8ff;
+}

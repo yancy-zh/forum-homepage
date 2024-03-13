@@ -4,6 +4,7 @@ import { Table } from "antd";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import PostersAvatars from "./PostersAvatars.js";
+import "./PostTable.css";
 function PostTable(props) {
   const [postsSource, setPostsSource] = useState([]);
   const [usersSource, setUsersSource] = useState([]);
@@ -82,7 +83,15 @@ function PostTable(props) {
       ),
     },
   ];
-  return <Table rowKey="id" columns={columns} dataSource={postsSource}></Table>;
+  return (
+    <Table
+      className="post-table"
+      rowKey="id"
+      columns={columns}
+      dataSource={postsSource}
+      rowClassName={"row"}
+    ></Table>
+  );
 }
 
 PostTable.propTypes = {};

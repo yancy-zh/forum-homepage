@@ -12,5 +12,9 @@ export default function Header() {
   //   new Intl.DurationFormat("en", { style: "digital", hours: "long" }).format(
   //     duration
   //   );
-  return <div>a forum homepage</div>;
+  return (
+    <div className="header-container">
+      <div className="title">A Forum Homepage</div>
+    </div>
+  );
 }
