@@ -73,7 +73,11 @@ function PostTable(props) {
         ></PostersAvatars>
       ),
     },
-    { key: "reply_count", title: "Replies", dataIndex: "reply_count" },
+    {
+      key: "reply_count",
+      title: "Replies",
+      dataIndex: "reply_count",
+    },
     { key: "views", title: "Views", dataIndex: "views" },
     {
       key: "activities",
@@ -85,8 +89,8 @@ function PostTable(props) {
   ];
   return (
     <Table
-      className="post-table"
       rowKey="id"
+      className="ant-table-thread"
       columns={columns}
       dataSource={postsSource}
       rowClassName={"row"}
